@@ -1,0 +1,22 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Ansible
+*.retry
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets / credentials
+*.pem
+*.key
+.env
+
+# OS/editor files
+.DS_Store
+.vscode/

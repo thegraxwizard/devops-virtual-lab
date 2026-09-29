@@ -1,0 +1,14 @@
+---
+- name: Configure DevOps Server
+  hosts: servers
+  become: yes
+
+  tasks:
+    - name: Install Docker
+      command: amazon-linux-extras install docker -y
+
+    - name: Start and enable Docker
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
